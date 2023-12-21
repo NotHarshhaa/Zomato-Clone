@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 200px;
+  background-color: #f6ebf6;
+
+  @include mobile {
+    padding: 10px;
+  }
+
+  @include tablet {
+    padding: 10px 30px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .top1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include mobile {
+        flex-direction: column;
+      }
+
+      h2 {
+        font-size: 2rem;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .lang {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        select {
+          border: 1px solid gray;
+          border-radius: 5px;
+          background-color: white;
+          color: black;
+          font-size: 14px;
+          color: black;
+          outline: none;
+          scroll-behavior: smooth;
+          padding: 10px 12px;
+
+          option {
+            background-color: white;
+            padding: 10px;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          }
+        }
+      }
+    }
+
+    .bottom1 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+      .bottomContent {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h4 {
+          font-size: 18px;
+          font-weight: normal;
+          letter-spacing: 0.1rem;
+        }
+
+        p {
+          color: gray;
+          text-transform: capitalize;
+        }
+
+        .links {
+          display: flex;
+          gap: 10px;
+          cursor: pointer;
+        }
+
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  .bottom p {
+    text-align: start;
+    color: gray;
+    font-size: 14px;
+  }
+}

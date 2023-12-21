@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+.collection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 200px;
+  gap: 30px;
+
+  @include mobile {
+    padding: 10px;
+  }
+
+  @include tablet {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  h1 {
+    text-align: start;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .collectionText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @include tablet {
+      gap: 10px;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 18px;
+      color: #333;
+
+      @include tablet {
+        font-size: 16px;
+      }
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      color: coral;
+      cursor: pointer;
+    }
+  }
+
+  .collectionCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+
+    .collectionImg {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.5;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+      }
+
+      h3 {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+        color: white;
+        font-weight: normal;
+        z-index: 99;
+      }
+
+      span {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: white;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        z-index: 99;
+      }
+    }
+  }
+}

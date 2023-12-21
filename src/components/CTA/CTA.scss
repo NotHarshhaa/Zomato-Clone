@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+.cta {
+  width: 100%;
+  background-color: #f6ebf6;
+  padding: 50px 200px;
+  display: flex;
+  justify-content: center;
+
+  @include mobile {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  @include tablet {
+    padding: 10px;
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+    img {
+      width: 80%;
+      object-fit: cover;
+    }
+  }
+
+  .right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px auto;
+    gap: 30px;
+
+    h1 {
+      color: #222;
+      font-size: 3rem;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      font-weight: normal;
+      letter-spacing: 0.1rem;
+    }
+
+    .radio {
+      display: flex;
+      gap: 20px;
+
+      .radioBtn {
+        display: flex;
+        gap: 8px;
+
+        input {
+          width: 50px;
+          outline: lightcoral;
+          cursor: pointer;
+        }
+
+        label {
+          font-size: 18px;
+          color: #222;
+          font-weight: normal;
+        }
+      }
+    }
+
+    .input {
+      display: flex;
+      gap: 20px;
+      @include mobile {
+        flex-direction: column;
+      }
+      input {
+        min-width: 250px;
+        padding: 10px 14px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+
+        &::placeholder {
+          color: lightgray;
+          font-weight: bold;
+        }
+      }
+
+      button {
+        border: none;
+        background-color: rgb(225, 59, 59);
+        padding: 10px 14px;
+        cursor: pointer;
+        color: white;
+        border-radius: 5px;
+        letter-spacing: 0.07rem;
+        font-size: 16px;
+        font-weight: normal;
+
+        &:hover {
+          background-color: rgb(196, 34, 34);
+        }
+      }
+    }
+
+    span {
+      color: gray;
+    }
+    .img {
+      display: flex;
+      gap: 20px;
+
+      @include mobile {
+        gap: 10px;
+      }
+
+      img {
+        width: 150px;
+        cursor: pointer;
+
+        @include mobile {
+          width: 120px;
+        }
+      }
+    }
+  }
+}

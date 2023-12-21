@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+.accContainer {
+  width: 100%;
+  padding: 50px 0px;
+
+  h2 {
+    text-align: start;
+    padding-top: 20px;
+    padding-left: 200px;
+    margin-bottom: 20px;
+    color: #333;
+
+    @include mobile {
+      padding: 10px;
+    }
+  }
+}
