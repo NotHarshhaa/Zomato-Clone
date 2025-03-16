@@ -1,81 +1,137 @@
-# Zomato Clone: Secure Deployment with DevSecOps CI/CD
-![zomato-clone](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*X_hm5iF0NRjbOZHB6RQIFA.jpeg)
+# 🍽️ **Zomato Clone: Secure Deployment with DevSecOps CI/CD**  
 
-## 👉 Blog Link: https://harshhaa.hashnode.dev/zomato-clone-secure-deployment-with-devsecops-cicd
+![Zomato Clone](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*X_hm5iF0NRjbOZHB6RQIFA.jpeg)  
 
-## ✌️ Samples
-![Samples](https://miro.medium.com/v2/resize:fit:750/format:webp/1*xVxk3tSbk9yA6hel60t13g.png)
-![Samples](https://miro.medium.com/v2/resize:fit:750/format:webp/1*KOwp6K2sOcSmDyk9Axnvhw.png)
-![Samples](https://miro.medium.com/v2/resize:fit:750/format:webp/1*t1x_F_qwHI6anvRHS59OxA.png)
+🚀 **A full-stack Zomato Clone with DevSecOps integration for a secure and scalable deployment.**  
 
-# Getting Started with Create React App
+This **Zomato Clone: Secure Deployment with DevSecOps CI/CD** repository is a **full-stack food delivery application** inspired by Zomato. It includes a **React.js frontend** and integrates DevSecOps practices to ensure a secure and automated deployment pipeline.  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🔹 **Key Features:**  
 
-## Available Scripts
+✅ **User-friendly UI** – Interactive menu, checkout, and order tracking.  
+✅ **Secure DevOps Pipeline** – CI/CD automation with security checks.  
+✅ **Optimized Deployment** – Uses containerization & cloud hosting.  
+✅ **React.js-Based Frontend** – Built with Create React App.  
+✅ **Production-Ready** – Includes build optimizations & best practices.  
 
-In the project directory, you can run:
+> This repo is a great **learning project** for those interested in **DevSecOps, CI/CD, and secure web app deployment**. 🚀
 
-### `npm start`
+🔗 **Read the detailed blog post:** [Zomato Clone - Secure Deployment with DevSecOps CI/CD](https://harshhaa.hashnode.dev/zomato-clone-secure-deployment-with-devsecops-cicd)  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📸 **Project Screenshots**  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Home Page | Menu View | Checkout Page |  
+|-----------|----------|---------------|  
+| ![](https://miro.medium.com/v2/resize:fit:750/format:webp/1*xVxk3tSbk9yA6hel60t13g.png) | ![](https://miro.medium.com/v2/resize:fit:750/format:webp/1*KOwp6K2sOcSmDyk9Axnvhw.png) | ![](https://miro.medium.com/v2/resize:fit:750/format:webp/1*t1x_F_qwHI6anvRHS59OxA.png) |  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ **Getting Started**  
 
-### `npm run build`
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔧 **Prerequisites**  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ensure you have **Node.js** and **npm** installed.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+node -v   # Check Node.js version
+npm -v    # Check npm version
+```
 
-### `npm run eject`
+### 📦 **Installation**  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Clone the repository and install dependencies:  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+git clone https://github.com/your-repo/zomato-clone.git  
+cd zomato-clone  
+npm install  
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🚀 **Running the App**  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Start the development server:  
 
-## Learn More
+```sh
+npm start  
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🔗 Open [http://localhost:3000](http://localhost:3000) in your browser.  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📜 **Available Scripts**  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Command | Description |  
+|---------|------------|  
+| `npm start` | Runs the app in development mode |  
+| `npm test` | Launches the test runner |  
+| `npm run build` | Builds the app for production |  
+| `npm run eject` | Ejects the default configuration (irreversible) |  
 
-### Analyzing the Bundle Size
+For more details, check the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🚢 **Deployment**  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 🔥 **Build for Production**  
 
-### Advanced Configuration
+```sh
+npm run build  
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+📂 The app is built in the `build/` folder, ready for deployment.  
 
-### Deployment
+### 🌍 **Hosting**  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+You can deploy this project on:  
 
-### `npm run build` fails to minify
+- **Vercel** ([Docs](https://vercel.com/docs))  
+- **Netlify** ([Docs](https://docs.netlify.com/))  
+- **AWS Amplify** ([Docs](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html))  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Zomato-Clone
+---
+
+## 📚 Learn More  
+
+- 🏗️ [React Documentation](https://reactjs.org/)  
+- ⚡ [Code Splitting](https://facebook.github.io/create-react-app/docs/code-splitting)  
+- 🔍 [Analyzing Bundle Size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)  
+- 📲 [Making a Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)  
+
+---
+
+## 🤝 **Contributing**  
+
+Contributions are welcome! If you'd like to improve this project, feel free to submit a pull request.  
+
+---
+
+## **Hit the Star!** ⭐
+
+**If you find this repository helpful and plan to use it for learning, please give it a star. Your support is appreciated!**
+
+---
+
+## 🛠️ **Author & Community**  
+
+This project is crafted by **[Harshhaa](https://github.com/NotHarshhaa)** 💡.  
+I’d love to hear your feedback! Feel free to share your thoughts.  
+
+---
+
+### 📧 **Connect with me:**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/harshhaa-vardhan-reddy) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NotHarshhaa)  [![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/prodevopsguy) [![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white)](https://dev.to/notharshhaa) [![Hashnode](https://img.shields.io/badge/Hashnode-2962FF?style=for-the-badge&logo=hashnode&logoColor=white)](https://hashnode.com/@prodevopsguy)  
+
+---
+
+### 📢 **Stay Connected**  
+
+![Follow Me](https://imgur.com/2j7GSPs.png)
+
+---
+
+### 🎉 **Happy Coding!** 🚀  
