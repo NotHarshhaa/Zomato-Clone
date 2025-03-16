@@ -1,23 +1,32 @@
-# Use Node.js 16 slim as the base image
-FROM node:16-slim
+# Use an official Node.js image as the base (LTS version for stability)
+FROM node:18-alpine AS builder
 
-# Set the working directory
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the working directory
+# Copy package.json and package-lock.json first (Leverage Docker cache)
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install
+# Install dependencies in a clean environment
+RUN npm ci --only=production
 
-# Copy the rest of the application code
+# Copy the rest of the application source code
 COPY . .
 
 # Build the React app
 RUN npm run build
 
-# Expose port 3000 (or the port your app is configured to listen on)
+# ---- Production Stage ----
+FROM node:18-alpine
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the built React app from the builder stage
+COPY --from=builder /app .
+
+# Expose the port the app runs on
 EXPOSE 3000
 
-# Start your Node.js server (assuming it serves the React app)
+# Start the application
 CMD ["npm", "start"]
