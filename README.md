@@ -16,7 +16,7 @@ This **Zomato Clone: Secure Deployment with DevSecOps CI/CD** repository is a **
 
 > This repo is a great **learning project** for those interested in **DevSecOps, CI/CD, and secure web app deployment**. 🚀
 
-🔗 **Read the detailed blog post:** [Zomato Clone - Secure Deployment with DevSecOps CI/CD](https://harshhaa.hashnode.dev/zomato-clone-secure-deployment-with-devsecops-cicd)  
+🔗 **Read the detailed blog post:** [Zomato Clone - Secure Deployment with DevSecOps CI/CD](https://blog.prodevopsguytech.com/zomato-clone-secure-deployment-with-devsecops-cicd)  
 
 ## 📸 **Project Screenshots**  
 
